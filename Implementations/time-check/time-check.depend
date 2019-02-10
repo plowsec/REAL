@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1425894085 source:/home/vladimir/Dropbox/ProjetReverse/implementations/time-check/main.c
+	<stdio.h>
+	<stdlib.h>
+	<sys/ptrace.h>
+	<string.h>
+

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1421226316 source:c:\users\windaube\dropbox\vlad\programmation\backdoor_client\main.cpp
+	<iostream>
+	<winsock2.h>
+	<windows.h>
+
+1419884623 source:c:\users\windaube\dropbox\vlad\programmation\backdoor_client\res.rc
+	"res.h"
+
+1419884598 c:\users\windaube\dropbox\vlad\programmation\backdoor_client\res.h
+

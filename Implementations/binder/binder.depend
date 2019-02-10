@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1429001367 source:c:\users\windaube\dropbox\vlad\programmation\binder\binder\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"resource.h"
+	"shlobj.h"
+	"shlwapi.h"
+
+1428996515 source:c:\users\windaube\dropbox\vlad\programmation\binder\binder\res.rc
+	<winnt.h>
+	"resource.h"
+
+1428994999 c:\users\windaube\dropbox\vlad\programmation\binder\binder\resource.h
+

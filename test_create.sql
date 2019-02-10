@@ -1,0 +1,50 @@
+
+-- tables
+-- Table APPLICATIONS
+CREATE TABLE APPLICATIONS (
+    ID int    NOT NULL  AUTO_INCREMENT,
+    size int    NOT NULL ,
+    constructor varchar(100)    NOT NULL ,
+    receivers varchar(100)    NOT NULL ,
+    sharedUserID varchar(100)    NOT NULL ,
+    file_name varchar(100)    NOT NULL ,
+    CONSTRAINT APPLICATIONS_pk PRIMARY KEY (ID)
+);
+
+-- Table PERMISSIONS
+CREATE TABLE PERMISSIONS (
+    ID int    NOT NULL  AUTO_INCREMENT,
+    name varchar(100)    NOT NULL ,
+    CONSTRAINT PERMISSIONS_pk PRIMARY KEY (ID)
+);
+
+-- Table USAGES
+CREATE TABLE USAGES (
+    ID int    NOT NULL  AUTO_INCREMENT,
+    appID int    NOT NULL ,
+    permissionID int    NOT NULL ,
+    smali text    NOT NULL ,
+    java text    NOT NULL ,
+    CONSTRAINT USAGES_pk PRIMARY KEY (ID)
+);
+
+
+
+
+
+-- foreign keys
+-- Reference:  APPLICATIONS_USAGES (table: USAGES)
+
+
+ALTER TABLE USAGES ADD CONSTRAINT APPLICATIONS_USAGES FOREIGN KEY APPLICATIONS_USAGES (appID)
+    REFERENCES APPLICATIONS (ID);
+-- Reference:  PERMISSIONS_USAGES (table: USAGES)
+
+
+ALTER TABLE USAGES ADD CONSTRAINT PERMISSIONS_USAGES FOREIGN KEY PERMISSIONS_USAGES (permissionID)
+    REFERENCES PERMISSIONS (ID);
+
+
+
+-- End of file.
+

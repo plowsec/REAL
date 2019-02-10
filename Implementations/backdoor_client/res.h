@@ -1,0 +1,1 @@
+#define image 1
